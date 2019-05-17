@@ -1,0 +1,22 @@
+﻿  Camera.cpp
+  Circle.cpp
+  Mesh.cpp
+c:\users\greg\documents\courseworks\openglyear3\resources\corestructures\mesh.cpp(46): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  Model.cpp
+  PrincipleAxes.cpp
+  ShaderLoader.cpp
+  SkyBox.cpp
+  Sphere.cpp
+  TextRenderer.cpp
+c:\users\greg\documents\courseworks\openglyear3\resources\corestructures\textrenderer.cpp(72): warning C4838: conversion from 'FT_Pos' to 'GLuint' requires a narrowing conversion
+  TexturedQuad.cpp
+  TextureLoader.cpp
+  Timer.cpp
+  OfficeScene.cpp
+c:\users\greg\documents\courseworks\openglyear3\coursework\opengl\officescene.cpp(18): warning C4838: conversion from 'int' to 'unsigned int' requires a narrowing conversion
+c:\users\greg\documents\courseworks\openglyear3\coursework\opengl\officescene.cpp(282): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Source.cpp
+c:\users\greg\documents\courseworks\openglyear3\coursework\opengl\source.cpp(150): warning C4244: 'argument': conversion from 'double' to 'const float', possible loss of data
+  Generating Code...
+  glad.c
+  OpenGL.vcxproj -> C:\Users\Greg\Documents\Courseworks\OpenGLYear3\Coursework\x64\Debug\OpenGL.exe
