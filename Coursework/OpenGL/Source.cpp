@@ -18,9 +18,9 @@ const int MSAAinnt = 32;
 
 string fileNName = "MSAA32";
 
-std::ofstream csvFile;
-int sampleLength = 1000;
-int curSample = 0;
+//std::ofstream csvFile;
+//int sampleLength = 1000;
+//int curSample = 0;
 // Camera settings
 //							  width, heigh, near plane, far plane
 Camera_settings camera_settings{ screenWidth, screenHeight, 0.1, 100.0 };
@@ -38,7 +38,7 @@ OfficeScene		*officeScene = nullptr;
 
 int main()
 {
-	csvFile.open(fileNName + ".csv");
+	//csvFile.open(fileNName + ".csv");
 	// glfw: initialize and configure
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -148,13 +148,13 @@ int main()
 		// Update officeScene state
 		if (officeScene)
 			officeScene->update(timer.getDeltaTimeSeconds());
-		if (curSample <= sampleLength) {
+		/*if (curSample <= sampleLength) {
 			csvFile << std::to_string(timer.averageFPS()) << "," << std::to_string(timer.currentSPF()) << "\n";
-		}
-		else {
+		}*/
+		/*else {
 			cout << "Sample taken";
 			csvFile.close();
-		}
+		}*/
 		textRenderer.renderText("FPS: " + std::to_string(timer.averageFPS()) + " SPF: " + std::to_string(timer.currentSPF()), 25.0f, 25.0f, 0.5f, glm::vec3(1.0, 1.0f, 1.0f));
 		if (showofficeQuad)
 		{
@@ -170,7 +170,7 @@ int main()
 		// glfw: swap buffers and poll events
 		glfwSwapBuffers(window);
 		glfwPollEvents();
-		curSample++;
+		//curSample++;
 		
 	}
 
